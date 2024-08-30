@@ -3,6 +3,7 @@
 if [ $# -ne 2 ]; then
   echo "Pass 2 arguements"
   echo "USAGE: $0 ARG1 ARG2"
+  exit 1
 fi
 
 PERSON1=$1
