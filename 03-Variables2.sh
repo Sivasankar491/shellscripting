@@ -1,5 +1,10 @@
 #!/bin/bash
 
+if [ $# -ne 2 ]; then
+  echo "Pass 2 arguements"
+  echo "USAGE: $0 ARG1 ARG2"
+fi
+
 PERSON1=$1
 PERSON2=$2
 
