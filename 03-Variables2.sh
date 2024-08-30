@@ -9,7 +9,7 @@ if [ $# -ne 2 ]; then
   echo -e "$R USAGE: $N $0 ARG1 ARG2"
   exit 1
 else
-  echo -e "$G # of arguements satisfied"
+  echo -e "$G # of arguements satisfied$N"
 fi
 
 PERSON1=$1
