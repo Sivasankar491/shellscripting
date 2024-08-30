@@ -7,6 +7,7 @@ N="\e[0m"
 if [ $(whoami) != "ec2-user" ]; then
   echo -e "$R User is not ec2-user $N"
   echo "Please run the script with ec2-user"
+fi
 
 if [ $# -ne 2 ]; then
   echo -e "$R Pass 2 arguements $N"
