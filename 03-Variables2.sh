@@ -1,9 +1,15 @@
 #!/bin/bash
 
+R="\e[31m"
+G="\e[32m"
+N="\e[0m"
+
 if [ $# -ne 2 ]; then
-  echo "Pass 2 arguements"
-  echo "USAGE: $0 ARG1 ARG2"
+  echo -e "$RPass 2 arguements$N"
+  echo -e "$R USAGE: $N $0 ARG1 ARG2"
   exit 1
+else
+  echo -e "$G # of arguements satisfied"
 fi
 
 PERSON1=$1
