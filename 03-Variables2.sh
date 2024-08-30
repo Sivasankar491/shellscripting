@@ -5,7 +5,7 @@ G="\e[32m"
 N="\e[0m"
 
 if [ $# -ne 2 ]; then
-  echo -e "$RPass 2 arguements$N"
+  echo -e "$R Pass 2 arguements $N"
   echo -e "$R USAGE: $N $0 ARG1 ARG2"
   exit 1
 else
