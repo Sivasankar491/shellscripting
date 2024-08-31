@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo  "enter the name"
-read -p USERNAME
+echo "enter the name"
+read USERNAME
 
 echo ${USERNAME}
