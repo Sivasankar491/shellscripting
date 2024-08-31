@@ -1,0 +1,39 @@
+
+. --> Dot is used to match any single character
+  ex: bo.k --> book, bo1k, bokk
+
+* --> Preceeing item must match zero or more times
+  ex: co?l --> cl, col, cool, coooool
+
+? --> Preceeing item must match zero or 1 times
+  ex: colou?r --> color, colour
+
++ --> preceeding item must match 1 or more times
+  ex: file1+ --> file1, file11,file111, file1111
+
+{n} --> preceeding item must match n times
+  ex: [0-9]{3} --> 111, 123, 112, 931, 856 etc (Basically any 3 digit number ranging from 0-9)
+
+{n,} --> Minimum no. of times the preceeding item must match
+  ex: [0-7]{3,} --> 123, 1233, 45676 etc (Any 3 or more digits based on the given range.)
+
+{n,m} --> Minimum and maximun no.of times the preceeing item should match
+  ex: [0-5]{1,4} -- 1, 234, 344, 42, 1 etc
+
+^ --> Which means start of line marker
+  ex: ^hello --> line starting with hello
+
+$ --> Which means end of the line marker
+  ex: hello$ --> line ending with hello.
+
+[] --> any one of the character mentioned in the braces
+  ex: coo[kl] --> cook, cool
+
+[-] --> any character with in range
+  ex: file[1-3] --> file1, file2, file3
+
+[^] --> any character except those mentioned in the braces
+  ex: file[^123] --> file4, file5, file6
+
+\ --> Escape character, escaping any special meaning of the character and prints as it is.
+  ex: hell\.o  --> hell.o (Here DOT has special meaning in Regular Expression. As we add back slack before it, it just prints as dot) 

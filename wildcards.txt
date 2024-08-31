@@ -1,0 +1,12 @@
+? -- single character
+* -- any no. of characters
+[1-9] -- single character from range of 1 to 9
+{.pdf,.txt} -- comma seperated values, it lists files have extension both txt and pdf
+[!1] -- test[!1].txt -- it lists all text files except test1.txt
+
+[:upper:] -- upper case character
+[:lower:] -- lower case character
+[:alpha:] -- alphabetic character
+[:alnum:] -- alphanumeric character
+[:digit:] -- digit character
+[:space:] -- white space character(space/tab/newline)
