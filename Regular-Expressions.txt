@@ -37,3 +37,5 @@ $ --> Which means end of the line marker
 
 \ --> Escape character, escaping any special meaning of the character and prints as it is.
   ex: hell\.o  --> hell.o (Here DOT has special meaning in Regular Expression. As we add back slack before it, it just prints as dot) 
+
+IP=${BASH_REMATCH[0]}
